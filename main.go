@@ -2,10 +2,14 @@ package main
 
 import "fmt"
 
+type mascot struct {
+	name string
+	bitrh int
+	details []string
+}
 
 func main() {
-	gopher := map[string]string{"name": "gopher", "birth": "2009"}
-	for _, value := range gopher {
-		fmt.Println(value)
-	}
+	details := []string{"eyes", "teeth"}
+	gopher := mascot {name: "go gopher", bitrh: 2009, details: details}
+	fmt.Println(gopher.name)
 }
