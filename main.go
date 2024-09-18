@@ -4,7 +4,8 @@ import "fmt"
 
 
 func main() {
-	go_slice := []string{"wozl", "jjack", "jacky"}
-	go_slice = append(go_slice, "gopher")
-	fmt.Println(go_slice)
+	gopher := map[string]string{"name": "gopher", "birth": "2009"}
+	for _, value := range gopher {
+		fmt.Println(value)
+	}
 }
