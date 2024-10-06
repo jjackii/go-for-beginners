@@ -2,4 +2,8 @@
 
 Building Web Scrapper  
 
-📝 [Notion](https://ninth-agenda-0c7.notion.site/Go-103d382c218d809fb6c0eb0c6f3722d5 "Go 기초")
+<br/>
+<br/>
+  
+### 📝 Link  
+Notion : Lectures / [Go](https://wozlsla.notion.site/Go-108d382c218d80649691e7292b9cf012 "Go")
