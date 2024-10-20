@@ -1,6 +1,6 @@
 package accounts
 
-import "fmt"
+import "errors"
 
 // Account struct
 type Account struct {
@@ -15,12 +15,20 @@ func NewAccount(owner string) *Account {
 }
 
 // Deposit x amount on your account
-func (a Account) Deposit(amount int) {
-	fmt.Println("deposit", amount)
+func (a *Account) Deposit(amount int) {
 	a.balance += amount
 }
 
 // Balance of your account
 func (a Account) Balance() int {
 	return a.balance
+}
+
+// Withdraw x amount from your account
+func (a *Account) Withdraw(amount int) error {
+	if a.balance < amount {
+		return errors.New("can't withdraw")
+	}
+	a.balance -= amount
+	return nil
 }
